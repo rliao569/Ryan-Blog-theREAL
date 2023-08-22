@@ -10,6 +10,7 @@ This is about your journey. Start now!!!
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
 
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 
+-Dates: 
+8/20/23: I set up all of my programs.
+8/21/23: Running into errors with bundle install, I reinstalled all softwares but still could not get progress.
+8/22/23: This morning I finally got bundle install to work! Not only that, but the localhost works as well. The only issue I've encountered today is jupyter kernelspec list not being seen as a command in wsl. However, everything works for now. I am going to go through the process of pushing my first ever changes to github from VSCode. I sure hope nothing goes wrong! Hi
