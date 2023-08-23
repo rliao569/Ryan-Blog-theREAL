@@ -20,7 +20,7 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 
 | Week   | Jobs Finished |
 | -------- | ------- |
-| 0  |     |
+| 0  |  Tools and Equipment Overview; VSCode, GitHub Pages Setup   | 
 | 1 |      |
 |  2  |     |
 |  3   |     |
