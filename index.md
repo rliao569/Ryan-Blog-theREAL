@@ -22,6 +22,8 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 
 8/23/23: Today was much less stressful, and I learned how to customize my github page. I added an image, a schedule for myself, and even a video player; however, I realized that having a clickable video on localhost isn't something I can learn and do within a day. It'll definitely be a work in progress I will learn to do over the trimester. 
 
+8/24/23: 
+
 | Week   | Jobs Finished |
 | -------- | ------- |
 | 0  |  Tools and Equipment Overview; VSCode, GitHub Pages Setup   | 
