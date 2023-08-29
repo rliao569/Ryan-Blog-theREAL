@@ -1,14 +1,7 @@
 ---
 layout: default
 title: Student Blog
----
-
-
-## Build your Home Page here 
-This is about your journey. Start now!!!
-
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
+--- 
 
 ## Hi, I'm Ryan Liao. This is my first ever GitHub Webpage! 
 
@@ -35,15 +28,4 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 
 <img src="https://i1.sndcdn.com/artworks-t7I8MnGT22aUwxEL-pOTXZw-t500x500.jpg">
 
-<input type="file" accept="video/*" />
-<video controls autoplay></video>
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script>
-$('input').on('change', changeEvent => {
-  var reader = new FileReader();
-  reader.onload = onLoadEvent => $('video').attr('src', onLoadEvent.target.result).play();
-  reader.readAsDataURL(changeEvent.currentTarget.files[0]);
-});
-</script>
-
+<a href=">
