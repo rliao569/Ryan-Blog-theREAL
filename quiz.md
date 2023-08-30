@@ -10,4 +10,4 @@ type: hacks
 
 # Quiz
 
-<iframe src="https://replit.com/@rliao569/Ryans-amazing-quiz#main.py" width="600" height="400">
+<iframe src="https://replit.com/@rliao569/Ryans-amazing-quiz?embed=1" width="600" height="400"></iframe>
