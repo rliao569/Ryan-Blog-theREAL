@@ -20,6 +20,13 @@
 
 8/30/23: I added snake to my webpage!!!!
 
+8/31/23: I got the calculator working!!!!! proper format too :D
+
+9/1/23: live review
+
+# Future Plans:
+
+Finish formatting the JSquery table
 
 | Week   | Jobs Finished |
 | -------- | ------- |
