@@ -198,7 +198,7 @@ for (var item in menu) {
 //ideally the code should support mutliple items
 var item = "burger"
 
-//code should add the price of the menu items selected by the user 
+//code should add the price  of yes
 console.log(total)
 ```
 
