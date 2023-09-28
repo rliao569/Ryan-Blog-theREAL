@@ -10,7 +10,7 @@ author: Rohan Juneja
 {% include nav_basics.html %}
 
 
-# Following along
+# Following along ggit
 Remember to "git pull" on teacher repository to update to lates.
 - Run this notebook in VSCode
 - Activate Help-Toogel Developer Tools to add console outputs to runtime experience

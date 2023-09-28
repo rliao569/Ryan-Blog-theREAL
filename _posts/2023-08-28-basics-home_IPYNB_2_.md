@@ -11,7 +11,7 @@ comments: True
 {% include nav_basics.html %}
 
 
-# A guide to basic concepts in Web Notebook
+# A guide to basic concepts in Web Notebook hi
 - Making a menu
 - Review foundational topics (see menus HTML, JavaScript, DOM, CSS)
 - Guide to make your own custom page
