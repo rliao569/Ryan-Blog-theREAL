@@ -37,15 +37,20 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var alphabetList = [];
 
 for (var i = 0; i < 10; i++) {
-	alphabetList.push(i);
+	alphabetList.push(alphabet[i]);
 }
 
 console.log(alphabetList);
+
 ```
+
+
+    <IPython.core.display.Javascript object>
+
 
 ### What I Changed
 
-I changed...
+I changed "alphabetList.push(i)" to "alphabetList.push(alphabet[i]) which pushed the first 10 lowercase letters of the alphabet string into the alphabetlist array. Before, the console would log numbers 0-9 which are the first 10 numbers. The code did this because the code didn't recognize the alphabet list and rather just took the first 10 variables of the "for var i = 0" part.
 
 ## Segment 2: Numbered Alphabet
 
@@ -62,23 +67,38 @@ Where the underscores (_) are replaced with the letter and the position of that 
 ```python
 %%js
 
-// Copy your previous code to built alphabetList here
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var alphabetList = [];
 
-let letterNumber = 5
+for (var i = 0; i < 10; i++) {
+	alphabetList.push(alphabet[i]);
+}
 
-for (var i = 0; i < alphabetList; i++) {
-	if (i === letterNumber) {
-		console.log(letterNumber + " is letter number 1 in the alphabet")
+console.log(alphabetList);
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var alphabetList = [];
+
+for (var i = 0; i < 10; i++) {
+	alphabetList.push(alphabet[i]);
+}
+
+let letterNumber = 5;
+
+for (var i = 0; i < alphabetList.length; i++) {
+	if (i === letterNumber - 1) { // Subtract 1 because the alphabet is 0-based
+		console.log(alphabetList[i] + " is letter number " + letterNumber + " in the alphabet");
 	}
 }
 
-// Should output:
-// "e" is letter number 5 in the alphabet
 ```
+
+
+    <IPython.core.display.Javascript object>
+
 
 ### What I Changed
 
-I changed...
+I changed the loop from looping through alphabetlist to alphabetlist.length because we want a specific length or for the code to identify a specific part of the string rather than the string itself. I subtracted 1 from "letterNumber" because javascript is 0-based. Therefore, although e is definitely the fifth letter in the alphabet, it's recognized as "4" by javascript. I also used "alphabetlist[i]" to get the letter at the current index, which allows the code to pinpoint the 4 or as we know it the fifth number in the alphabet being e.
 
 ## Segment 3: Odd Numbers
 
@@ -90,49 +110,62 @@ Intended behavior: print a list of all the odd numbers below 10
 ```python
 %%js
 
-let evens = [];
-let i = 0;
+let odds = [];
+let i = 1;
 
 while (i <= 10) {
-  evens.push(i);
+  odds.push(i);
   i += 2;
 }
 
-console.log(evens);
+console.log(odds);
 ```
+
+
+    <IPython.core.display.Javascript object>
+
 
 ### What I Changed
 
-I changed...
+I changed the "evens" in the code to odds, and I let i = 1 instead of 0 because 1 is the first odd number. 
 
 # BELOW NOT EDITED
 
 The intended outcome is printing a number between 1 and 100 once, if it is a multiple of 2 or 5 
-- What values are outputted incorrectly. Why?
+- What values are outputted incorrectly. Why? Many of the numbers are being duplicated. To fixx this, change the "push" to "add"s and use a Set to store unique numbers. This ensures that the code will not print a duplicate number if a number that has already been printed appears again.
+
 - Make changes to get the intended outcome.
 
 
 ```python
 %%js
 
-var numbers = []
-var newNumbers = []
-var i = 0
+var numbers = [];
+var newNumbers = new Set(); // Use a Set to store unique numbers
+var i = 0;
 
 while (i < 100) {
-    numbers.push(i)
-    i += 1
+    numbers.push(i);
+    i += 1;
 }
+
 for (var i of numbers) {
     if (numbers[i] % 5 === 0)
-        newNumbers.push(numbers[i])
+        newNumbers.add(numbers[i]);
     if (numbers[i] % 2 === 0)
-        newNumbers.push(numbers[i])
+        newNumbers.add(numbers[i]);
 }
-console.log(newNumbers) 
 
+// Convert the Set back to an array
+var uniqueNumbers = Array.from(newNumbers);
+
+console.log(uniqueNumbers);
 
 ```
+
+
+    <IPython.core.display.Javascript object>
+
 
 # Challenge
 

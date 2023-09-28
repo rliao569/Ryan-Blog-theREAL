@@ -120,3 +120,45 @@ Div (groups together related content)
 # Resources
 - https://www.w3schools.com/html/default.asp
 - I will show a demo of how to find information on this website
+
+# HTML Hacks
+> Below is a wireframe for an HTML element you will create. A wireframe is a rough visual representation of HTML elements on a page and isn't necessarily to scale or have the exact styling that the final HTML will have. Using the syntax above, try to create an HTML snippet that corresponds to the below wireframe.
+
+> The "a tags" can contain any links that you want
+
+![wireframe for html hacks]({{ site.baseurl }}/images/wireframe.png)
+
+
+```python
+%%html
+<div>
+    <p>Geoguesser</p>
+    <button type = "button">click me</button>
+    <i>Geoguesser</i>
+    <p>We will make a Geoguesser</p>
+</div>
+
+<div>
+    <p>Links to github and idea sheet</p>
+    <a href="https://github.com/will-w-cheng/Team-Influencer-Innovators">TEAM INFLUENCER INNOVATORS</a>
+    <a href="https://docs.google.com/document/d/1zrdyzyfYjNBCcGR6giaNl64trvzqST6QLHkerMv3mzc/edit">Doc</a>
+    <p>Gaming</p>
+</div>
+```
+
+
+<div>
+    <p>Geoguesser</p>
+    <button type = "button">click me</button>
+    <i>Geoguesser</i>
+    <p>We will make a Geoguesser</p>
+</div>
+
+<div>
+    <p>Links to github and idea sheet</p>
+    <a href="https://github.com/will-w-cheng/Team-Influencer-Innovators">TEAM INFLUENCER INNOVATORS</a>
+    <a href="https://docs.google.com/document/d/1zrdyzyfYjNBCcGR6giaNl64trvzqST6QLHkerMv3mzc/edit">Doc</a>
+    <p>Gaming</p>
+</div>
+
+

@@ -263,3 +263,70 @@ console.log(titleElement.innerHTML)
 </script>
 
 
+
+
+```python
+%%html
+<div>
+    <h1>Geoguessor training game</h1>
+    <button type="button" onclick="alternateLinks()"><i>Click me</i></button>
+</div>
+
+<div id="link-container">
+    <h2>Wikipedia for information for different place</h2>
+    <a id="link1" href="https://en.wikipedia.org/wiki/China">China</a>
+    <a id="link2" style="display:none" href="https://en.wikipedia.org/wiki/Russia">Russia</a>
+</div>
+
+<script>
+    var currentLink = 1;
+
+    function alternateLinks() {
+        var link1 = document.getElementById("link1");
+        var link2 = document.getElementById("link2");
+
+        if (currentLink === 1) {
+            link1.style.display = "none";
+            link2.style.display = "inline";
+            currentLink = 2;
+        } else {
+            link1.style.display = "inline";
+            link2.style.display = "none";
+            currentLink = 1;
+        }
+    }
+</script>
+```
+
+
+<div>
+    <h1>Geoguessor training game</h1>
+    <button type="button" onclick="alternateLinks()"><i>Click me</i></button>
+</div>
+
+<div id="link-container">
+    <h2>Wikipedia for information for different place</h2>
+    <a id="link1" href="https://en.wikipedia.org/wiki/China">China</a>
+    <a id="link2" style="display:none" href="https://en.wikipedia.org/wiki/Russia">Russia</a>
+</div>
+
+<script>
+    var currentLink = 1;
+
+    function alternateLinks() {
+        var link1 = document.getElementById("link1");
+        var link2 = document.getElementById("link2");
+
+        if (currentLink === 1) {
+            link1.style.display = "none";
+            link2.style.display = "inline";
+            currentLink = 2;
+        } else {
+            link1.style.display = "inline";
+            link2.style.display = "none";
+            currentLink = 1;
+        }
+    }
+</script>
+
+

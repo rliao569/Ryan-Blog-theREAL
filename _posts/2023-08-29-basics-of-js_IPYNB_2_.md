@@ -273,3 +273,53 @@ if (age1 < age2) {
 </script>
 
 
+
+## My Display of Basics of Javascript: learning, editing, testing
+
+> The basic idea of the code was to simply compare variables a and b, and print whichever number was greater or lesser or equal. I integrated this basic code into our team's passion being Geoguessr Themed, by having the population numbers of two countries be variables a and b, and running the code would tell you which country has a greater population. 
+
+>For testing: Japan's population is about 125000000. South Korea's population is about 51000000.
+
+
+```python
+%%js
+// put your javascript code here
+var a = 51000000;
+var b = 125000000;
+
+if (a > b) {
+  console.log("Variable A is Japan's population, which is larger than Variable B which is South Korea's population.");
+} else if (a < b) {
+  console.log("Variable A is South Korea's population, which is less than Variable B which is Japan's population.");
+} else {
+  console.log("The Variables are equal, so both variable A and B must be both Japan or South Korea's populatin.");
+}
+
+```
+
+
+    <IPython.core.display.Javascript object>
+
+
+## This is a more optimized version of the code above for the specific populations of Japan or South Korea. The code will prompt you to enter the proper populations in.
+
+
+```python
+%%js
+// put your javascript code here
+var a = 51000000;
+var b = 125000000;
+
+if (a === 51000000 && b === 125000000) {
+  console.log("Variable A is Japan's population, which is larger than Variable B, which is South Korea's population.");
+} else if (a === 125000000 && b === 51000000) {
+  console.log("Variable A is South Korea's population, which is less than Variable B, which is Japan's population.");
+} else {
+  console.log("These aren't the populations goofy");
+}
+
+```
+
+
+    <IPython.core.display.Javascript object>
+
