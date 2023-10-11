@@ -2,11 +2,10 @@
 toc: False
 comments: True
 layout: post
-title: P2 Algorithms
-description: Team SRSC
-type: collab
+title: ALGORITHMS
+description: Team SRSC ya
+type: hacks
 courses: {'csp': {'week': 7}}
-author: cayden, saathvik, sri, ryan
 ---
 
 # ALGORITHMS 
