@@ -75,9 +75,6 @@ else:
     print("you are a minor")
 ```
 
-    you are an adult
-
-
 ## <mark><b>Relational operators:</b></mark> 
 - Used to test the relationship between 2 variables, expressions, or values. These relational operators are used for comparisons and they evaluate to a Boolean value (true or false).
 
@@ -118,9 +115,6 @@ else:
     print ("It is not raining")
 
 ```
-
-    Bring an Umbrella!
-
 
 ## <mark><b>Logical operators:</b></mark>
 Used to evaluate multiple conditions to produce a single Boolean value.
@@ -168,22 +162,6 @@ else:
 
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    /tmp/ipykernel_4709/3557944586.py in <module>
-          3 import random
-          4 
-    ----> 5 a = random.randint[0, 100]
-          6 b = random.randint[0, 100]
-          7 print[a]
-
-
-    TypeError: 'method' object is not subscriptable
-
-
 ## <b>Homework</b>
 
 ### Criteria for above 90%:
@@ -212,7 +190,7 @@ def question_with_response(prompt):
     return msg
 
 # Define the number of questions and initialize the correct answers counter
-questions = 5
+questions = 9
 correct = 0
 
 # Personalized greeting message
@@ -225,24 +203,173 @@ answer = input("Are you ready to take a test?")
 # Question 1: Boolean Basics 
 # Ask a question about Boolean values and check the response
 # Provide feedback based on the correctness of the response
+def ask_boolean_question1():
+    global correct
+
+    response = input("Do Boolean values represent a truth value? (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'true':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'false':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question1()
 
 # Question 2: Boolean Expressions
 # Ask a question about Boolean expressions and their importance in programming
 # Provide feedback based on the correctness of the response
 
+def ask_boolean_question2():
+    global correct
+    response = input("is (x>y && x>z) a boolean expression? (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'true':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'false':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question2()
 # Question 3: Conditional Statements
 # Ask a question about the purpose of conditional (if-else) statements in programming
 # Provide feedback based on the correctness of the response
+
+def ask_boolean_question3():
+    global correct
+    response = input("is elif the same as else if? (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'true':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'false':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question3()
 
 # Question 4: Relational Operators
 # Ask a question about common relational operators in programming and provide examples
 # Provide feedback based on the correctness of the response
 
+def ask_boolean_question4():
+    global correct
+    response = input("is a=b equals? (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'false':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'true':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question4()
+
 # Question 5: Logical Operators
 # Ask a question about the use of logical operators in programming and provide examples
 # Provide feedback based on the correctness of the response
+
+def ask_boolean_question5():
+    global correct
+    response = input("The only logical operators are AND and OR (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'false':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'true':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question5()
+
+def ask_boolean_question6():
+    global correct
+    response = input("The != operator in programming checks whether two values are not equal. (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'true':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'false':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question6()
+
+def ask_boolean_question7():
+    global correct
+    response = input("The && operator in programming represents the logical OR operation. (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'false':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'true':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question7()
+
+def ask_boolean_question8():
+    global correct
+    response = input("The >= operator checks if the value on the left is greater than or equal to the value on the right. (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'true':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'false':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question8()
+
+def ask_boolean_question9():
+    global correct
+    response = input("The else if statement in programming is used to handle multiple conditions sequentially. (Enter 'True' or 'False'): ")
+    print(response)
+    if response.lower() == 'true':
+        print("Correct!")
+        correct += 1
+    elif response.lower() == 'false':
+        print("Incorrect.")
+    else:
+        print("Invalid response. Please enter 'True' or 'False'.")
+
+ask_boolean_question9()
+
 
 # Display the final score
 # Calculate the percentage of correct answers and provide feedback
 print(user_name + ", you scored " + str(correct) + "/" + str(questions))
 ```
+
+    Hello, ryan liao running /bin/python
+    You will be asked 9 questions.
+    true
+    Correct!
+    true
+    Correct!
+    true
+    Correct!
+    false
+    Correct!
+    false
+    Correct!
+    true
+    Correct!
+    false
+    Correct!
+    true
+    Correct!
+    true
+    Correct!
+    ryan liao, you scored 9/9
+
