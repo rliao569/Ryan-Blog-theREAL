@@ -1,11 +1,10 @@
 ---
-toc: False
-comments: False
+toc: True
+comments: True
 layout: post
-title: Boolean, If Lesson
-description: Team LEIA
+title: BOOLEAN IF
 type: hacks
-courses: {'compsci': {'week': 8}}
+courses: {'csp': {'week': 8}}
 ---
 
 # Boolean

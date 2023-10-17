@@ -4,7 +4,7 @@ comments: True
 layout: post
 title: Iteration Lesson
 type: hacks
-courses: {'csp': {'week': 7}}
+courses: {'csp': {'week': 8}}
 ---
 
 ## Flow of Information
