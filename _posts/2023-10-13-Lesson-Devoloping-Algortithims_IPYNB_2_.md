@@ -466,38 +466,24 @@ Try implementing user input into this program. Ask the user to enter a number th
 
 
 ```python
-def sum_of_odds(n):
-    total = 0
-    for i in range(n / 2): #Note the 2 and the very end initializes a step size of 2 for the function
-        total += i
-    return total
-
-n = int(input("Enter a positive integer: "))
-result = sum_of_odds(n)
-print(f"The sum of odd numbers from 1 to {n} is {result}")
+number = int(input("Enter a number besides 1 to start the sequence."))
+while number != 1:
+    print(number)
+    if number % 2 == 0:
+        number = number/2
+    else:
+        number = (number * 3) + 1
+print(number)
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    /tmp/ipykernel_18193/1548673936.py in <module>
-          6 
-          7 n = int(input("Enter a positive integer: "))
-    ----> 8 result = sum_of_odds(n)
-          9 print(f"The sum of odd numbers from 1 to {n} is {result}")
-
-
-    /tmp/ipykernel_18193/1548673936.py in sum_of_odds(n)
-          1 def sum_of_odds(n):
-          2     total = 0
-    ----> 3     for i in range(n / 2): #Note the 2 and the very end initializes a step size of 2 for the function
-          4         total += i
-          5     return total
-
-
-    TypeError: 'float' object cannot be interpreted as an integer
+    3
+    10
+    5.0
+    16.0
+    8.0
+    4.0
+    2.0
+    1.0
 
 
 2. Create an algorithm that generates terms to the Fibonacci Sequence which outputs a specific number of terms defined in your code. The sequence starts off like 1, 1, 2, 3, 5, … each following term being the sum of the previous two.
@@ -510,8 +496,29 @@ Ideas for above 90%:
 
 
 ```python
-# Place your code here...
+def fibonacci(number):
+    x = 0
+    a = 1
+    b = 1
+    print(a)
+    print(b)
+    while x < number:
+        x += 1
+        c = a + b
+        a = b
+        b = c
+        print(c)
+
+number = int(input("Enter a number for how many terms this Fibonacci Sequence will go to after 1 and 1."))
+
+fibonacci(number)
 ```
+
+    1
+    1
+    2
+    3
+
 
 3. Make a statistics calculator that calculates the mean, median, and mode of a specific series. Do this using iteration and without the use of imported modules (like the statistics one) that allows you to call pre defined functions like mean, median, and mode. Each of these calculations follows an algorithm. 
 
@@ -522,5 +529,62 @@ Ideas for above 90%:
 
 
 ```python
-# Place your code here...
+import random
+
+mean = 0
+median = 0
+mode = 0
+
+print("Numbers:")
+numbers = []
+for i in range (0,5):
+    num = random.randint(0,100)
+    numbers.append(num)
+
+print(numbers)
+
+print("Mean:")
+for i in range (0,5):
+    mean = mean + numbers[i]
+    
+mean = mean/5
+print(mean)
+
+print("Median:")
+sorted_numbers = sorted(numbers)
+median = sorted_numbers[2]
+print(median)
+
+print("Mode:")
+def find_mode(lst):
+   
+
+    mode = None
+    mode_count = 0
+
+    for element in lst:
+        count = 0
+        for other_element in lst:
+            if element == other_element:
+                count += 1
+
+        if count > mode_count:
+            mode = element
+            mode_count = count
+
+    return mode #i dont think theres a mode unless somehow a number is generated twice in the set of fice and then then mode would be that number
+```
+
+    Numbers:
+    [90, 73, 27, 13, 36]
+    Mean:
+    47.8
+    Median:
+    36
+    Mode:
+
+
+
+```python
+
 ```
