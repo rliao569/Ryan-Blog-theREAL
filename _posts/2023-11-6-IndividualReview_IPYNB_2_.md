@@ -1,0 +1,126 @@
+---
+toc: True
+comments: True
+layout: post
+title: Individual Review
+description: Tri 1
+type: tangibles
+courses: {'csp': {'week': 10}}
+---
+
+## Contributions to the Team Passion Project
+>> Frontend
+
+As one of the main frontend leads, I played a crucial role in shaping the visual and interactive aspects of our project, as well as helping the other frontend members Andrew and Daniel (later). I was responsible for coding prototypes of our game, which eventually became a significant part of the final product. My contribution extended beyond coding, as I actively participated in brainstorming sessions, offering creative ideas and solutions to enhance the user experience. I took pride in making the game visually appealing, ensuring smooth transitions, and maintaining a neat design throughout. Additionally, I took part in making the homepage, which serves as the first point of contact for the viewers, aimed to make a lasting impressioj. My dedication to the frontend helped create a polished and engaging product that users could enjoy and navigate effortlessly.
+
+>>Backend
+
+Through thorough testing of the Flask servers, I have played a crucial role in guaranteeing the reliability of our backend infrastructure. My dedication to ensuring that the frontend seamlessly connects and retrieves data from the backend has significantly enhanced the user experience, making our project more user-friendly and efficient. My expertise and commitment to these tasks have been pivotal in advancing our passion project, and keeping our team in line for success.
+
+>> DevOps and Deployments
+
+In our passion project's DevOps and Deployment phase, I played a pivotal role in ensuring a smooth and efficient transition from development to production. Collaboration with the backend team was paramount as we worked closely to make certain that all components functioned seamlessly within the production environment. To address any challenges that arose, effective communication was key, and we regularly engaged with our dedicated Scrum Master, Daniel. Together, we tackled issues and debugging tasks as a cohesive team, resolving obstacles swiftly and ensuring that our deployment process was as smooth as possible. This collaborative approach not only streamlined our project's deployment but also fostered a strong sense of teamwork and problem-solving in our development process.
+
+## Important and Favorite Commits
+
+[Commit on Oct 24](https://github.com/rliao569/Frontend-CSP/commit/e6d3750f5acead5e847c3f21bae5242ad0c3039c)
+> This commit fixed an issue that our frontend page had. Our CSS files caused issues on our front page, which interfered with the link to the game. By deleting this, our front page functioned properly. 
+
+[Commit on Oct 25](https://github.com/rliao569/Frontend-CSP/commit/e572ba0013442b339199e328479183fe197d8c70)
+> This commit was for a slot machine which would use points obtained from playing the geoguessr game. You would roll for the great wonders of the world. I also attempted making an audio clip play once something was rolled. Although this wasn't utilized in the final product, I would love to use a similar concept in future projects.
+
+[Commit on Oct 25](https://github.com/rliao569/Frontend-CSP/commit/bf3874837067b817585c78a16b1af70bd8a48722)
+> Probably my most important commit. This was the code that made the basis of the game. It was, at its base form, a simple aim trainer game. We utilized this concept to our advantage by assigning the dot to specific areas on the map via libraries, which paired the images and the coordinates together. 
+
+[Commit on Nov 1](https://github.com/rliao569/Frontend-CSP/commit/6a08fa369e72626e61a80fd5e4415878d5b15d33)
+> Around this time , the backend was finished, and everyone was focused on polishing frontend, and making the front page look nice. In this commit, I made a loading screen for the game, which was very important, as the game would break if you clicked on the button before the data from the backend successfully pulled. It also made transitioning from the home page to the game nicer. 
+
+## Issues
+
+[Issue on Oct 25](https://github.com/rliao569/Frontend-CSP/issues/6)
+> This issue reminded the team to prioritize syncing the frontend and backend rather than focusing on individual contributions to the project, as this was the primary issue we had throughout the entire project. 
+
+
+
+## College Board Quiz 
+
+>> Questions I got Wrong
+
+Question 22: I couldn't understand the code's function too well, so I honestly just guessed. The option i selected, which was A, basically made the code say that if less than half of the days in the month were hot, then the month would be considered hot. Although this would be the right code for say, determining if the month was generally cold or wasn't hot, it wouldn't work in this scenario. The correct option is B, which makes the Boolean Expression evaluate true when there are more than half of the days in the month that are above 90 degrees.
+
+Question 33: I initially didn't understand this question at all. However, after getting some help from my teammates, it was a lot easier than I thought. When you run the program, if "floor" is greater than 10, then "include" is immediately true, and code ends. If "floor" is less than 10, then another T/F question is asked: if there are 3 bedrooms, then :include" is true, and if not, then include is "false." The code is a chain of true/false questions that will result in two different results depending on the outcome. 
+
+Question 39: I initially thought that using open standards and protocols was something that allowed the latency of your messages to be lower, so that internet communication was more efficient. It is really just logic; if open standards and protocols were actually able to decrease your latency, then we would have less lag than we have with today's technology. 
+
+Question 42: The difference between 128-bit adresses and 32-bit adresses wasn't clear to me until some google searches and checking my work. I now understand that every bit it goes up, it goes up 2^(n). This makes sense, as if the difference between 128 bit and 32 bit adressing was only by 96 times (which was the answer i put down), then in terms of the entire world and every single adress, that isn't a big difference. 
+
+Question 46: It's not possible to make an algorithm that proves whether a program will enter an infinite loop. Although it is definitely possible to make predictions based on patterns, that pattern is not 100 percent guranteed in the 1 millionth loop, or the 1 billionth loop, etc. It would take infinite time to prove, making it impossible.
+
+Question 52: I knew that the second sequence worked, but I had thought that the third sequence did not work properly. I had thought that doing the sort first would somehow mess up the order of the final result, even though the resultant of both sequence II and III are the same.
+
+Question 65: my answers were B and C, but the correct answers were B and D. I was wrong about C, as having Y as as positive value would still provide a correct result eventually. B and D do not work, as they have a negative y value, and as "count" always increases, y will never equal count. 
+
+
+## Personal Reflection of Tri 1 
+
+>>WEEK 1-3: BEGINNING, LEARNING, NAVIGATING
+
+The first few weeks were undoubtly the most stressful in the trimester. As someone with basically no experience with VScode, terminal, or even github, learning how to navigate through each resource was my first challenge in this class. Even still, I'm not completely savvy in terms of my resources, but I am much better than I was at the start of the tri. 
+
+>>WEEKS 4-6 LIVE REVIEWS, TEAMWORK
+
+These weeks consisted of at least one Live Review every week. Because of this, the main thing I needed to work on was teamwork and communication. I didn't expect CSP to be such a team oriented class; I had thought it was more focused around the individual, but I was wrong (which is a good thing, and helped me prepare for what was ahead of me later in the trimester). Being a team of three alongside Daniel and Andrew was definitely a learning experience. I got the gist of our strengths and weaknesses, and we got better at communicating throughout the trimester as opposed to our first ever live review, which we didn't do as well on. 
+
+>>WEEKS 7-12 STUDENT TEACHING, PASSION PROJECT
+
+These weeks went by way too quickly. There was a lot to learn, and a lot to do. Besides keeping up with the semi-weekly live reviews, we also had to learn and teach a topic from College Board, and create an entire functional webpage surrounding our team's passions. The communication factor in our team teach wasn't good, and my main regret while working on the team teach was not communicating enough with our new teammates Saaras and Will. The entire team teach was a new concept for not only me but our entire team, as we had never actually "taught" something in a formal manner. It's definitely something I will remember to work on in the next trimester. 
+
+Throughout the second half of the trimester, the passion project was a chance to learn web design, and how backend and frontend work together. Additionally, thanks to new knowledge from the student teaches, I was able to look at code and actually know what it meant. Truthfully, if you had asked me what an API was before this trimester, I wouldn't know at all. Thankfully, we learned from our previous mistakes and started heavily focusing on communication with our team of five. Saaras and Will are very knowledgeable in backend, so they set up our server and translated a lengthy page of base 64 which would turn into our images once the data was called to the frontend. Andrew had gotten better at web design throughout the trimester, so he was in charge of making all the interactive bits on our homepage. Daniel and I were in charge of constantly brainstorming ideas for our Geoguessr esque game, making mutliple prototypes of the game throughout the weeks which would be the structure for the rest of our team to build off of. 
+
+From having reviews with the teacher weekly, to making an entire website with a game, this class is nothing like the other classes I have taken. I learned so much about the principles of coding and what to expect going into Computer Science. As someone who is interested in electrical engineering, this trimester was a gate to a whole other field I had never seen before. 
+
+## Grading NATM
+
+Austins Group:
+Had a functional weather app was very unique didnt see any other projects like it, unfortunately they didnt get up their feature’s due to the backend crash so I couldn't properly grade it.
+It was made supposedly using a weather api that they called from and then utilizing it they were able to predict weather trend’s and then using a seperate api that they had built in thier fronted they were able to display the temperature actively. (3.8) because its very unique but isnt as hard to implement very cool to display
+Had a very nice UI and was definitely something I would be willing to use, especially if it worked with the 5 year prediction graph of weather 1/1
+Overall I would give it a 4.8/5 I excluded key features because a lot of it wasnt working unfortunately due to the backend crash.
+Hanlun’s Group:
+I thought it was very unique how they were able to get chess up and working specifically through Yeongsu Demo was relatively elegant. Unfortunately it was extremely laggy at the event but in class I was able to view it and it worked amazing so I would give it a 4/4. The Whisp chatting system was also very elegant with it looking like discord or similar and having a nice UI that I could see myself using. So overall I give it a 4/4.
+I would say the how it was made is also unique because its able to communicate move changes to aws via post requests and then using get requests displays the move on the other user’s side to make a functional chess game which I think is super unique. And the whisp I think its cool how they are able to edit the database by typing in a url which allows them to clear it allowing for a nice set of moderation etc. (4/4)
+I would say applicationally its a 0.8 because I dont think the whisp is good enough without some key features like user managament etc. But the chess game is very well developed and usable.
+Overall I would give it a 8.8/9
+Advik’s Group:
+I thought the appeal was funny. had a clear group they were attending to, made a nice hook with a breaking bad theme. I also thought the song finder concept was good although it didnt work because the server crashed and the breaking bad simulator was also pretty fun and hilarious to look at 4/4.
+I think the knowledge is also pretty cool with them housing a backend, that effectively communicated with their frontend for there music, which was unable to work but with there code you could see the get requests working effectively. So I would give it a 4/4.
+I think that the usability of it is where the project again lack’s because the UI is not done extremely well, which I think can be fixed with some more focus on frontend over features. However I do like that it does work so with some touchup it could be amazing. 0.7/1
+I would give it in all a 8.7/9
+
+
+## Some PseudoCode 
+
+<img src="https://cdn.discordapp.com/attachments/1081856159855677464/1171001709187842099/zIwfXAAAAAElFTkSuQmCC.png?ex=655b1753&is=6548a253&hm=9b836df7809fa28808fcc993c7cfbce07ec656cbbab4517810b9260c255c2bea&">
+
+# MOVE_FORWARD() - Moves the robot forward one square
+# MOVE_BACKWARD() - Moves the robot backward one square
+# ROTATE_LEFT() - Rotates the robot 90 degrees left
+# ROTATE_RIGHT() - Rotates the robot 90 degrees right
+
+# Objective is to get the robot to the gray box
+
+PROCEDURE graybox
+{
+    
+    MOVE_FORWARD()
+    MOVE_FORWARD()
+    ROTATE_RIGHT()
+    MOVE_FORWARD()
+    MOVE_FORWARD()
+    MOVE_FORWARD()
+    MOVE_FORWARD()
+    ROTATE_LEFT()
+    MOVE_FORWARD()
+    MOVE_FORWARD()
+    
+}
