@@ -1,11 +1,12 @@
 ---
-comments: True
 layout: post
+title: Beneficial and Harmful effects
+description: j
 toc: True
-title: Beneficial and Harmful Effects Team Teach
-description: Team Teach
+comments: True
+categories: ['5.A', 'C4.1']
+courses: {'csse': {'week': 8}, 'csp': {'week': 14, 'categories': ['6.B']}, 'csa': {'week': 9}}
 type: hacks
-courses: {'compsci': {'week': 14}}
 ---
 
 # 5.1 Beneficial and harmful effects 

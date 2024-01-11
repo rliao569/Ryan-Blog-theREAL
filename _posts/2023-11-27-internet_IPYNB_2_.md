@@ -1,11 +1,12 @@
 ---
-comments: True
-layout: notebook
-title: The Internet
-description: Big Idea 4.1 Student Teaching
-type: tangibles
+layout: post
+title: Internet
+description: j
 toc: True
-courses: {'compsci': {'week': 1}}
+comments: True
+categories: ['5.A', 'C4.1']
+courses: {'csse': {'week': 8}, 'csp': {'week': 13, 'categories': ['6.B']}, 'csa': {'week': 9}}
+type: hacks
 ---
 
 # 4.1 The Internet

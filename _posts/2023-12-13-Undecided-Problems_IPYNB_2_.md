@@ -1,11 +1,12 @@
 ---
-toc: False
-comments: True
 layout: post
-title: Undecidable Problems
-description: :D
-type: ccc
-courses: {'csp': {'week': 15}}
+title: undecided problems
+description: j
+toc: True
+comments: True
+categories: ['5.A', 'C4.1']
+courses: {'csse': {'week': 8}, 'csp': {'week': 16, 'categories': ['6.B']}, 'csa': {'week': 9}}
+type: hacks
 ---
 
 ### Decidable Problem
@@ -68,3 +69,5 @@ An algorithm exists that can always produce a yes/no answer for the halting prob
 ### Homework Question
 
 Research and explain how modern  systems or  browsers deal with the aspects of the halting problem when a program takes too long to load. Provide examples of mechanisms or strategies implemented in real-world scenarios to manage unresponsive programs or prolonged loading times.
+
+Systems and browsers these days are pretty smart. For example, we will sometimes run into buffering issues when there are too many requests being sent to google on google chrome; the computer will halt the task, and ask us, the user, whether we want to wait or close the program. It will forcefully halt the process so that we can choose whether to boot up the program again, or keep it loading. Another way that modern systems tackle prolonged loading times is through softwares and task manager. In task manager, we can see how much CPU is being taken up by each software on your computer. The user can close extra softwares to make other programs load and respond quicker; this is a common strategy in gaming for people with less beefier computers and laptops that can't run games and big softwares simultaneously. 

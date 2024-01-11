@@ -1,11 +1,12 @@
 ---
+layout: post
+title: computing bias
+description: j
 toc: True
 comments: True
-layout: post
-title: Computing Bias
-description: College Board Big Idea 5.3 Computing Bias Student Lesson
+categories: ['5.A', 'C4.1']
+courses: {'csse': {'week': 8}, 'csp': {'week': 16, 'categories': ['6.B']}, 'csa': {'week': 9}}
 type: hacks
-courses: {'compsci': {'week': 15}}
 ---
 
 # Human Biases Reflected As Computer Biases
@@ -78,9 +79,9 @@ What are some other examples of intentional and/or unintentional bias in innovat
 ### Question 1: 
 Define "computer bias" in your own words and explain how it can result from intentional or unintentional factors in software development. Give a brief example of this. Explain how programmers can actively work to reduce bias in their algorithms?
 
-> Answer: 
+> Answer: Computer bias is when a data that computer gets isn't entirely accurate, as their sources may be varied. A real world example of this is taking data from a survey that is less recent. This could be unintentional, as the computer can't actually decide for itself whether the data is accurate to today or not and must be verified by humans. Programmers can reduce bias in their algorithms by elimitating all possible sources of bias, and data can be fact checked by multiple people/sources before being used.
 
 ### Question 2:
 Briefly describe the two types of bias in software development and provide examples from the gaming industry and social media platforms. How might biases in software design affect user engagement and experiences?
 
-> Answer:
+> Answer: There are intentional and unintentional biases in software development. Intentional bias is when something is designed to cataer towards a certain audience: for example, we get emails from colleges because we are high school students and colleges are looking to advertise to our demographic; they wouldn't bother advertising to someone who's already in or done with college. Unintentional bias is when the programmers didn't intend to aim at a certain demographic yet still hit it. For example, the demographic for instagram is heavily focused towards the younger generation, even though it wasn't entirely. Biases in software design affect user engagement, as these biases will obviously cater towards certain audiences, and these audiences will be more attracted than others. 
