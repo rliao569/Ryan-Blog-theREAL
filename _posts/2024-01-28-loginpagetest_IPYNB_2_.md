@@ -1,16 +1,22 @@
 ---
-comments: True
 layout: post
+title: login page test
+description: e
 toc: True
-title: Login Page test
-description: True
+comments: True
+categories: ['5.A', 'C4.1']
+courses: {'csp': {'week': 19}}
 type: tangibles
-courses: {'compsci': {'week': 19}}
 ---
 
-```python
-%%HTML
-<div id="login">
+hi ho stinky!
+
+<!-- 
+A simple HTML login form with a Login action when button is pressed.  
+
+The form triggers the login_user function defined in the JavaScript below when the Login button is pressed.
+-->
+<form action="javascript:login_user()">
     <p><label>
         User ID:
         <input type="text" name="uid" id="uid" required>
@@ -20,45 +26,56 @@ courses: {'compsci': {'week': 19}}
         <input type="password" name="password" id="password" required>
     </label></p>
     <p>
-        <button class="button" type="submit">Log in</button>
+        <button>Login</button>
     </p>
-</div>
-<script>
-    document.getElementById('login').addEventListener('submit', function(event) {
-             event.preventDefault(); 
-             const uid = document.getElementById('uid').value;
-             const password = document.getElementById('password').value;
-             const loginData = {
-                 uid: uid,
-                 password: password
-             };
-             fetch('http://127.0.0.1:8086/api/users/login', { // use your own port please
-                 method: 'POST',
-                 headers: {
-                     'Content-Type': 'application/json'
-                 },
-                 body: JSON.stringify(loginData)
-             })
-             .then(response => {
-                 if (response.ok) {
-                     return response.json();
-                 } else {
-                     if (response.status === 401) {
-                         throw new Error('Wrong username or password. Please retype.');
-                     } else if (response.status === 404) {
-                         throw new Error('Username or password not found. Please register first.');
-                     } else {
-                         throw new Error('Login failed');
-                     }
-                 }
-             })
-             .then(data => {
-                 console.log('it worked!');
-             })
-             .catch(error => {
-                 console.error('Error:', error.message);
-                 alert(error.message);
-             });
-         });
-     </script>
-```
+</form>
+
+<!-- 
+Below JavaScript code is designed to handle user authentication in a web application. It's written to work with a backend server that uses JWT (JSON Web Tokens) for authentication.
+
+The script defines a function when the page loads. This function is triggered when the Login button in the HTML form above is pressed. 
+ -->
+<script type="module">
+    // uri variable and options object are obtained from config.js
+    import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
+
+    function login_user(){
+        // Set Authenticate endpoint
+        const url = uri + '/api/users/authenticate';
+
+        // Set body of request to include login data from DOM
+        const body = {
+            uid: document.getElementById("uid").value,
+            password: document.getElementById("password").value,
+        };
+
+        // Change options according to Authentication requirements
+        const authOptions = {
+            ...options, // This will copy all properties from options
+            method: 'POST', // Override the method property
+            cache: 'no-cache', // Set the cache property
+            body: JSON.stringify(body)
+        };
+
+        // Fetch JWT
+        fetch(url, authOptions)
+        .then(response => {
+            // handle error response from Web API
+            if (!response.ok) {
+                const errorMsg = 'Login error: ' + response.status;
+                console.log(errorMsg);
+                return;
+            }
+            // Success!!!
+            // Redirect to the database page
+            window.location.href = "http://localhost:4200/Ryan-Blog-theREAL//5.a/c4.1/2024/01/30/pagetest_IPYNB_2_.html";
+        })
+        // catch fetch errors (ie ACCESS to server blocked)
+        .catch(err => {
+            console.error(err);
+        });
+    }
+
+    // Attach login_user to the window object, allowing access to form action
+    window.login_user = login_user;
+</script>

@@ -1,31 +1,14 @@
 ---
-comments: True
 layout: post
+title: signup page test
+description: e
 toc: True
-title: Signup Page test
-description: True
+comments: True
+categories: ['5.A', 'C4.1']
+courses: {'csp': {'week': 19}}
 type: tangibles
-courses: {'compsci': {'week': 19}}
 ---
 
-```python
-class _Create(Resource):
-        def post(self):
-            body = request.get_json()
-            name = body.get('name')
-            uid = body.get('uid')
-            password = body.get('password')
-            if uid is not None:
-                new_user = User(name=name, uid=uid, password=password)
-            user = new_user.create()
-            if user:
-                return user.read()
-            return {'uid is possibly a dupe'}, 400
- api.add_resource(_Create, '/create')
-```
-
-
-```python
 %%HTML
 <div id="signup">
   <p><label>
@@ -55,7 +38,7 @@ class _Create(Resource):
            uid: uid,
            password: password
        };
-       fetch('http://localhost:8086/api/users/create', { //use your own port
+       fetch('http://127.0.0.1:8086/api/users/create', { //use your own port
            method: 'POST',
            headers: {
                'Content-Type': 'application/json',
@@ -65,7 +48,7 @@ class _Create(Resource):
        .then(response => response.json())
        .then(data => {
            console.log('Sign Up successful:', data);
-           window.location.href = "{{site.baseurl}}/login";
+           window.location.href = "http://localhost:4200/Ryan-Blog-theREAL//5.a/c4.1/2024/01/28/loginpagetest_IPYNB_2_.html";
        })
        .catch(error => {
            console.error('Error:', error);
@@ -73,4 +56,3 @@ class _Create(Resource):
    }
 </script>
 
-```
